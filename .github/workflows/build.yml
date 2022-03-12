@@ -24,7 +24,7 @@ jobs:
       - name: Build in Plugin
         run: ./gradlew build
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: build-artifacts
           path: build/libs
