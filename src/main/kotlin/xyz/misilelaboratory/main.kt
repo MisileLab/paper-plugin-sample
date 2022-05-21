@@ -1,4 +1,4 @@
-package com.chizstudio.misilelaboratory
+package xyz.misilelaboratory
 
 class main {
 }
