@@ -1,3 +1,5 @@
+import java.util.*
+
 plugins {
     kotlin("jvm") version "1.9.0"
     kotlin("plugin.serialization") version "1.9.0"
@@ -16,12 +18,17 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
 }
 
 project.extra.set("packageName", name.replace("-", ""))
-project.extra.set("pluginName", name.split('-').joinToString("") { it.capitalize() })
+project.extra.set("pluginName", name.split('-').joinToString("") { it ->
+    it.replaceFirstChar {
+    if (it.isLowerCase()) it.titlecase(
+        Locale.getDefault()
+    ) else it.toString()
+} })
 
 tasks {
     processResources {
