@@ -2,7 +2,7 @@ import java.util.*
 
 plugins {
     kotlin("jvm") version "2.1.21"
-    kotlin("plugin.serialization") version "2.1.21"
+    kotlin("plugin.serialization") version "2.2.0"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.0")
 }
 
 project.extra.set("packageName", name.replace("-", ""))
