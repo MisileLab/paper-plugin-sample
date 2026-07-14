@@ -1,8 +1,8 @@
 import java.util.*
 
 plugins {
-    kotlin("jvm") version "2.4.0"
-    kotlin("plugin.serialization") version "2.4.0"
+    kotlin("jvm") version "2.4.10"
+    kotlin("plugin.serialization") version "2.4.10"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:26.1.2.build.74-stable")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.4.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.4.10")
 }
 
 project.extra.set("packageName", name.replace("-", ""))
