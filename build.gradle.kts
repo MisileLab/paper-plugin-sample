@@ -1,7 +1,7 @@
 import java.util.*
 
 plugins {
-    kotlin("jvm") version "2.4.0"
+    kotlin("jvm") version "2.4.10"
     kotlin("plugin.serialization") version "2.4.0"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
