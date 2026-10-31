@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:26.3.build.200-stable")
+    compileOnly("io.papermc.paper:paper-api:26.3.build.234-stable")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.4.21")
 }
 
